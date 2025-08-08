@@ -25,6 +25,7 @@ const Footer = () => {
           <Link to="/join">Join</Link>
         </div>
         <div className="footer-section-columns">
+          <span>EduSkills Foundation, India</span>
           <span>9881030756</span>
           <span>samikshalone2@gmail.com</span>
         </div>

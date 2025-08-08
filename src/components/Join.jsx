@@ -1,4 +1,5 @@
 import React from "react";
+import { Form } from "./Form";
 
 const Join = () => {
   return (
@@ -6,41 +7,63 @@ const Join = () => {
       <h1 className="primary-heading">Join Our Team</h1>
       <div className="two-sections">
         <section className="join-section-info">
-        <p className="primary-text">
-          At Eduskills, we're not just building a team; we're assembling a force
-          for change. As we continue our mission to break barriers and empower
-          communities through education, we invite passionate individuals to
-          join us in making a tangible difference in the lives of underserved
-          children.
-        </p>
-        <p className="primary-text">
-          Whether you're a seasoned educator, a community organizer, or simply
-          someone with a heart for social impact, there's a place for you in our
-          team. Together, we'll collaborate, innovate, and inspire, working
-          towards a future where every child has the opportunity to thrive.
-        </p>
-      </section>
-      
+          <p className="primary-text">
+            Volunteers are the backbone of EduSkills. Whether you can teach,
+            mentor, organize, or just lend your time, your contribution will
+            shape a child's future.
+          </p>
+        </section>
 
-  <section class="form-section">
-    <h2>Become a Volunteer</h2>
-    <p>Fill out the form below to join us in making a difference.</p>
-    
-    <form class="volunteer-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
+        <Form />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+        {/* <section className="form-section">
+          <h2>Become a Volunteer</h2>
+          <p>Fill out the form below to join us in making a difference.</p>
 
-      <label for="message">Why do you want to join?</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+          <form className="volunteer-form">
+            <div className="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name"
+                required
+              />
+            </div>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+            <div className="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
 
-  
+            <div className="form-group">
+              <input
+                type="number"
+                id="number"
+                name="number"
+                placeholder="Enter your Phone Number"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Why do you want to join?"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Join</button>
+          </form>
+        </section> */}
       </div>
     </div>
   );

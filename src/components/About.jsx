@@ -35,22 +35,46 @@ const About = () => {
         </div>
         <div className="about-section-text-container">
           <p className="primary-subheading">About us</p>
-          <h1 className="primary-heading">
-            Empowering Young Minds Through Skillful Learning
-          </h1>
+          <h3>About EduSkills Foundation:</h3>
           <p className="primary-text">
-            We believe that every child deserves the chance to learn, grow, and
-            thrive. EduSkills is dedicated to providing skill-based learning
-            opportunities for children, especially in underserved communities.
-            Through engaging activities, creative programs, and personalized
-            support, we help children build confidence, discover their
-            strengths, and prepare for a brighter future.
+            EduSkills Foundation is a non-profit organization committed to
+            providing quality education to children in need. Founded in 2018,
+            our mission is to bridge the education gap in under-resourced
+            communities by creating safe, inclusive, and empowering learning
+            environments.
           </p>
+          <h3>Why Education Matters:</h3>
           <p className="primary-text">
-            Our goal is to make education exciting, accessible, and practical —
-            because when children learn real-world skills, they unlock
-            real-world possibilities.
+            Education is not a privilege — it's a fundamental right. Yet,
+            millions of children around the world are deprived of this basic
+            need. At EduSkills, we believe that every child, regardless of their
+            background, deserves access to knowledge, guidance, and opportunity.
           </p>
+          <div className="mis-vis">
+            <h3>Our Vision:</h3>
+            <p className="primary-text">
+              A world where every child receives the education they deserve and
+              the chance to create a better future.
+            </p>
+            <h3>Our Mission:</h3>
+            <ul>
+              <li className="primary-text">
+                Provide free and accessible education to underprivileged
+                children
+              </li>
+              <li className="primary-text">
+                Promote awareness about the importance of education in breaking
+                the poverty cycle
+              </li>
+              <li className="primary-text">
+                Build learning centers in rural and urban slums
+              </li>
+              <li className="primary-text">
+                Equip children with life skills, digital literacy, and
+                self-confidence
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="about-section-bottom">

@@ -21,6 +21,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #585858;
 }
 
 nav {
@@ -407,3 +408,113 @@ button[type="submit"]:hover {
   background-color: #0099cc;
 }
 
+/* ================== RESPONSIVE STYLES ================== */
+
+/* Tablets and smaller (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .App {
+    width: 95vw;
+  }
+
+  .navbar-links-container {
+    display: none;
+  }
+
+  .navbar-menu-container {
+    display: block;
+  }
+
+  .home-banner-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-text-section {
+    align-items: center;
+  }
+
+  .about-section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section-text-container p {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-section-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Large mobile & small tablet (≤768px) */
+@media screen and (max-width: 768px) {
+  .primary-heading {
+    font-size: 2rem;
+  }
+
+  .primary-text {
+    padding-right: 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .contact-form-container input {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Small mobile (≤480px) */
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .nav-name-container h1 a {
+    font-size: 1.5rem;
+  }
+
+  .secondary-button, .primary-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .about-section-image-container img,
+  .home-image-section img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-section p {
+    font-size: 1rem;
+  }
+}

@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from "react";
 import {useState} from "react";
 import {Link} from "react-router-dom";
@@ -15,27 +15,31 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import VolunteerActivismOutlinedIcon from '@mui/icons-material/VolunteerActivismOutlined';
-
+import CollectionsIcon from '@mui/icons-material/Collections';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
-      icon: <HomeIcon />,
+      text: <Link to="/"> Home </Link>,
+      icon: <Link to="/"><HomeIcon /></Link>,
     },
     {
-      text: "About",
-      icon: <InfoIcon />,
+      text: <Link to="/About"> About </Link>,
+      icon: <Link to="/About"><InfoIcon /></Link>,
     },
     {
-      text: "Contact",
-      icon: <PhoneRoundedIcon />,
+      text: <Link to="/Gallery"> Gallery </Link>,
+      icon: <Link to="/Gallery"> <CollectionsIcon /> </Link>,
     },
     {
-      text: "Volunteer",
-      icon: <VolunteerActivismOutlinedIcon />,
-    }
+      text: <Link to="/Contact"> Contact </Link>,
+      icon: <Link to="/Contact"> <PhoneRoundedIcon /> </Link >,
+    },
+    {
+      text: <Link to="/Join"> Join </Link>,
+      icon: <Link to="/Join"><VolunteerActivismOutlinedIcon /></Link>,
+    },
   ];
 
   return (

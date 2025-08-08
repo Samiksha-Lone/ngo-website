@@ -73,7 +73,7 @@ export const Form = () => {
 
           <div className="form-group">
             <input
-              type="number"
+              type="tel"
               id="number"
               name="number"
               placeholder="Enter your Phone Number"

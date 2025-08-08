@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Users from "./Users";
 
 export const Form = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +11,6 @@ export const Form = () => {
   const [users, setUsers] = useState([]);
 
   const handleChanges = (e) => {
-    //destructuring
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -100,9 +98,6 @@ export const Form = () => {
           <button type="submit">Join</button>
         </form>
       </section>
-      {/* {users.map(function (e, idx) {
-        return <Users key={idx} e={e} />;
-      })} */}
     </div>
   );
 };

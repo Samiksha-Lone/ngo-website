@@ -1,95 +1,43 @@
 import React from "react";
-import AboutBackground from "../assets/about-background.png";
 import AboutBackgroundImage from "../assets/about-background-image.jpg";
-import { BsFillPlayCircleFill } from "react-icons/bs";
-import Search from "../assets/search-icon.png";
-import Learn from "../assets/learn-icon.png";
-import Grow from "../assets/grow-icon.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
-  const InfoData = [
-    {
-      image: Search,
-      title: "Discover Talents",
-      text: "Children explore their interests through fun, hands‑on activities.",
-    },
-    {
-      image: Learn,
-      title: "Learn New Skills",
-      text: "Guided learning helps children build real‑world skills with confidence.",
-    },
-    {
-      image: Grow,
-      title: "Grow Confidence",
-      text: "Every skill learned gives a child a stronger, brighter future.",
-    },
-  ];
   return (
     <div>
-      <div className="about-section-container">
-        <div className="about-background-image-container">
-          <img src={AboutBackground} alt="" />
-        </div>
-        <div className="about-section-image-container">
-          <img className="img" src={AboutBackgroundImage} alt="" />
-        </div>
-        <div className="about-section-text-container">
-          <p className="primary-subheading">About us</p>
-          <h3>About EduSkills Foundation:</h3>
-          <p className="primary-text">
-            EduSkills Foundation is a non-profit organization committed to
-            providing quality education to children in need. Founded in 2018,
-            our mission is to bridge the education gap in under-resourced
-            communities by creating safe, inclusive, and empowering learning
-            environments.
-          </p>
-          <h3>Why Education Matters:</h3>
-          <p className="primary-text">
-            Education is not a privilege — it's a fundamental right. Yet,
-            millions of children around the world are deprived of this basic
-            need. At EduSkills, we believe that every child, regardless of their
-            background, deserves access to knowledge, guidance, and opportunity.
-          </p>
-          <div className="mis-vis">
-            <h3>Our Vision:</h3>
+      <h2 className="primary-heading">About Eduskills</h2>
+      <section className="about-section" id="about">
+        <div className="about-container">
+          <div className="about-image">
+            <img src={AboutBackgroundImage} alt="Children learning" />
+          </div>
+          <div className="about-content">
             <p className="primary-text">
-              A world where every child receives the education they deserve and
-              the chance to create a better future.
+              Eduskills is a non-profit organization dedicated to providing
+              underprivileged children with access to quality education,
+              skill-building activities, and a safe space to learn and grow. We
+              believe that every child has the right to dream big and the
+              ability to achieve those dreams with the right guidance.
             </p>
-            <h3>Our Mission:</h3>
+            <p className="primary-text">
+              Through community-based learning programs, vocational training,
+              and mentorship, we aim to bridge the gap between potential and
+              opportunity. Our mission is to empower children with knowledge,
+              creativity, and confidence for a brighter future.
+            </p>
             <ul>
-              <li className="primary-text">
-                Provide free and accessible education to underprivileged
-                children
-              </li>
-              <li className="primary-text">
-                Promote awareness about the importance of education in breaking
-                the poverty cycle
-              </li>
-              <li className="primary-text">
-                Build learning centers in rural and urban slums
-              </li>
-              <li className="primary-text">
-                Equip children with life skills, digital literacy, and
-                self-confidence
-              </li>
+              <li>📚 Access to free education and resources</li>
+              <li>🎨 Creative and skill-building workshops</li>
+              <li>🤝 Mentorship and guidance programs</li>
+              <li>🌍 Community outreach initiatives</li>
             </ul>
+            <Link to="/Join">
+              <button className="about-btn">Join Our Mission</button>
+            </Link>
           </div>
         </div>
-      </div>
-      <div className="about-section-bottom">
-        {InfoData.map((data) => (
-          <div className="about-section-bottom-info" key={data.title}>
-            <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
-            </div>
-            <h2>{data.title}</h2>
-            <p>{data.text}</p>
-          </div>
-        ))}
-      </div>
+      </section>
     </div>
-    // </div>
   );
 };
 

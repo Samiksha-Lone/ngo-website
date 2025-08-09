@@ -15,55 +15,6 @@ const Join = () => {
         </section>
 
         <Form />
-
-        {/* <section className="form-section">
-          <h2>Become a Volunteer</h2>
-          <p>Fill out the form below to join us in making a difference.</p>
-
-          <form className="volunteer-form">
-            <div className="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your Name"
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your Email"
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <input
-                type="number"
-                id="number"
-                name="number"
-                placeholder="Enter your Phone Number"
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Why do you want to join?"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit">Join</button>
-          </form>
-        </section> */}
       </div>
     </div>
   );

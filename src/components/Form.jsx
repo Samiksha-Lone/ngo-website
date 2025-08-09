@@ -5,6 +5,7 @@ export const Form = () => {
     name: "",
     email: "",
     number: "",
+    reason: "Donations",
     message: "",
   });
 
@@ -27,6 +28,7 @@ export const Form = () => {
         name: formData.name,
         email: formData.email,
         number: formData.number,
+        reason: formData.reason,
         message: formData.number,
       },
     ]);
@@ -35,6 +37,7 @@ export const Form = () => {
       name: "",
       email: "",
       number: "",
+      reason: "Donations",
       message: "",
     });
     alert("You are joined as a Volunteer. Thank you so much!");
@@ -81,6 +84,19 @@ export const Form = () => {
               value={formData.number}
               onChange={handleChanges}
             />
+          </div>
+
+          <div className="form-group">
+            <select
+              name="reason"
+              value={formData.reason}
+              onChange={handleChanges}
+            >
+              <option>Donations</option>
+              <option>Volunteering</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
           </div>
 
           <div className="form-group">

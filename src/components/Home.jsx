@@ -3,6 +3,8 @@ import BannerBackground from "../assets/home-banner-background.png";
 import BannerImage from "../assets/home-banner-image.jpg";
 import { FiArrowRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import About from "./About";
+import Gallery from "./Gallery";
 
 function Home() {
   return (
@@ -20,14 +22,17 @@ function Home() {
             and thrive through free education and community support.
           </p>
           <p className="primary-text">
-            We are a non-profit dedicated to providing education and skills training to underprivileged children.
+            We are a non-profit dedicated to providing education and skills
+            training to underprivileged children.
           </p>
           <p className="primary-text">
             Join us in spreading the joy of learning.
           </p>
-          <Link to="/Join"><button className="secondary-button">
-            Join us <FiArrowRight />{" "}
-          </button></Link>
+          <Link to="/Join">
+            <button className="secondary-button">
+              Join us <FiArrowRight />{" "}
+            </button>
+          </Link>
         </div>
         <div className="home-image-section">
           <img className="img" src={BannerImage} alt="" />

@@ -49,8 +49,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <Link to="/">Home</Link>
-        <Link to="/About">About</Link>
-        <Link to="./Gallery">Gallery</Link>
+        <Link to="/About" >About</Link>
+        <Link to="/Gallery">Gallery</Link>
         <Link to="/Contact">Contact</Link>
         <Link to="/Join"><button className="primary-button">Become a Volunteer</button></Link>
       </div>
